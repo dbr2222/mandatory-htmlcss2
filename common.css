@@ -1,0 +1,88 @@
+body {
+width: 100%;
+height: 100%;
+font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 400px;
+  background-color: #33322D;
+  border-radius: 3%;
+  background-image: url("resources/header.jpg");
+  background-size: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  margin-top: 30px;
+  color: white;
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+h1:hover {
+  margin-top: 30px;
+  color: white;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+a {
+  margin-top: 150px;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  margin-left: -50px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+a:hover {
+  margin-top: 150px;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  margin-left: -50px;
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.poster {
+  min-width: 150px;
+  width: 15%;
+  margin: 15px;
+  transition: 0.5s;
+  flex: auto;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+
+.poster:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0px 0px 9px 6px rgba(0,0,0,0.75);
+  flex: auto;
+}
+
+@media (max-width: 850px) {
+  a {
+    display: none;
+  }
+
+  h1 {
+    margin-left: 40px;
+  }
+
+
+}
